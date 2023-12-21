@@ -67,7 +67,7 @@ class MyDrawer extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(Icons.group,
                       color: Theme.of(context).colorScheme.inversePrimary),
-                  title: const Text(" S T U D E N T S"),
+                  title: const Text(" U S E R S"),
                   onTap: () {
                     Navigator.pop(context);
                     Navigator.pushNamed(context, "/users-page");
