@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/display_message.dart';
+import 'widgets/list_tile.dart';
 
 class UsersPage extends StatelessWidget {
   const UsersPage({super.key});
@@ -52,9 +53,9 @@ class UsersPage extends StatelessWidget {
                   itemCount: users.length,
                   itemBuilder: (context, indext) {
                     final user = users[indext];
-                    return ListTile(
-                      title: Text(user["username"]),
-                      subtitle: Text(user["email"]),
+                    return MyListTile(
+                      title: user["username"],
+                      subtitle: user["email"],
                     );
                   },
                 ),
